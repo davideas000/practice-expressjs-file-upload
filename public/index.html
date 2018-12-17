@@ -1,0 +1,19 @@
+<html>
+  <head>
+    <title>Upload files</title>
+    <link href="/bootstrap.min.css" rel="stylesheet">
+  </head>
+  <body>
+    <h1>Upload files</h1>
+    <form action="/upload" method="POST" enctype="multipart/form-data">
+      <div class="form-group">
+        <label for="image" class="form-control">Add a file</label>
+        <input type="file" class="form-control" id="image" name="image">
+        <input type="file" class="form-control" id="image2" name="image">
+        <input type="file" class="form-control" id="image3" name="image">
+        <input type="file" class="form-control" id="image4" name="image">
+      </div>
+      <button type="submit" class="btn btn-primary">upload</button>
+    </form>
+  </body>
+</html>

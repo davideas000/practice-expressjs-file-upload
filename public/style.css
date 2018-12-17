@@ -1,0 +1,10 @@
+.photo {
+  position: relative;
+  width: 300px;
+}
+
+button.remove {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+}

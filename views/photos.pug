@@ -1,0 +1,16 @@
+html
+  head
+    title Photos
+    link(rel='stylesheet' href='bootstrap.min.css')
+    link(rel='stylesheet' href='style.css')
+  body
+    h1 Photos
+    each p in photos
+      div(class='photo')
+        input(type='hidden' value=p)
+        figure(class='figure')
+          img(src='/uploads/' + p class='figure-img img-fluid rounded' alt='photos')
+          figcaption(class='figure-caption') Photo caption
+        button(type='button' class='close remove' aria-label='remove')
+          span(aria-hidden='true') &times;
+    script(src='script.js')
